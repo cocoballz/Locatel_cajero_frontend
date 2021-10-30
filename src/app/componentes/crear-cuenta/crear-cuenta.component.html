@@ -1,0 +1,16 @@
+<div class="container my-5 ">
+  <h1 class="">Crear Nuevo usuario</h1>
+  <form method="post" action="http://127.0.0.1:8000/api/create_acount">
+
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+        <label for="nombre">Nombre de la cuenta</label>
+      </div>
+      <div class="form-floating">
+        <input type="number" min="0" class="form-control" id="valor_inicial" name="valor_inicial" placeholder="Valor inicial">
+        <label for="valor_inicial">Saldo inicial de la cuenta</label>
+      </div> <br>
+    <input type="hidden" name="user" value="1">
+    <button class="btn btn-secondary" type="submit">Crear</button>
+  </form>
+</div>

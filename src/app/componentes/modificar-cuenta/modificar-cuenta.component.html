@@ -1,0 +1,27 @@
+<div class="container my-5 ">
+  <h1 class="">Gestionar Cuenta </h1>
+  <form method="post" action="http://127.0.0.1:8000/api/tramitar">
+
+    <div class="form-floating mb-3">
+      <select class="form-select" name="tipo" id="tipo" aria-label="Floating label select example">
+        <option selected>Seleccione una opcion...</option>
+        <option value="1">Consultar</option>
+        <option value="2">Retirar</option>
+        <option value="3">Consignar</option>
+      </select>
+      <label for="tipo">Tipo de Movimiento</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="number" min="0" class="form-control" id="valor" name="valor"
+             placeholder="$$$$$">
+      <label for="valor">Monto de la Transacción</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="number" min="0" class="form-control" id="cuenta" name="cuenta"
+             placeholder="# de Cuenta">
+      <label for="cuenta">Numero de Cuenta</label>
+    </div>
+
+    <button class="btn btn-secondary" type="submit">Gestionar</button>
+  </form>
+</div>
