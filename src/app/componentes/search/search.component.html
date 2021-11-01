@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<div class="container my-5 ">
+  <h1 class="">Gestionar Cuenta </h1> <br>
+  <form>
+
+
+    <div class="form-floating mb-3">
+      <input type="number" min="0" [(ngModel)]="cuenta"  class="form-control" id="cuenta" name="cuenta"
+             placeholder="# de Cuenta">
+      <label for="cuenta">Numero de Cuenta</label>
+    </div>
+
+    <button class="btn btn-secondary" type="submit" (click)="busqueda()" >Gestionar</button>
+  </form>
+</div>
+<app-footer></app-footer>
